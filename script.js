@@ -1,9 +1,10 @@
 //your JS code here. If required.
-function getSize()
-{
-var w = document.documentElement.clientWidth;
-var h = document.documentElement.clientHeight;
-        
-// put the result into a h1 tag
- document.getElementById('wh').innerHTML = "<h1>Width: " + w + " â€¢ Height: " + h + "</h1>";
+let myWindow;
+
+function openWin() {
+  myWindow = window.open("", "", "width=200, height=100");
+}
+
+function resizeWin() {
+  myWindow.resizeTo(665, 359);
 }
