@@ -1,10 +1,12 @@
 //your JS code here. If required.
-let myWindow;
+const sizeInfoDiv = document.getElementById('size-info');
+    const h1Element = sizeInfoDiv.querySelector('h1');
 
-function openWin() {
-  myWindow = window.open("", "", "width=200, height=100");
-}
+    function updateSizeInfo() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      h1Element.textContent = `Width: ${width} Height: ${height}`;
+    }
 
-function resizeWin() {
-  myWindow.resizeTo(665, 359);
-}
+    updateSizeInfo(); // initialize the size info on page load
+    window.addEventListener('resize', updateSizeInfo);
