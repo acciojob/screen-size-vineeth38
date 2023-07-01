@@ -1,5 +1,5 @@
 //your JS code here. If required.
-const sizeInfoDiv = document.getElementById('size-info');
+const sizeInfoDiv = document.getElementById('sizeInfo');
     const h1Element = sizeInfoDiv.querySelector('h1');
 
     function updateSizeInfo() {
